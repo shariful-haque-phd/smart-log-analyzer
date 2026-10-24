@@ -1,0 +1,41 @@
+$ python src/analyze_logs.py sample/app.log --top 20
+{
+  "level_counts": {
+    "ERROR": 3,
+    "INFO": 1
+  },
+  "groups": [
+    {
+      "template": "<TIMESTAMP> ERROR Connection failed for client <N> from <IP>",
+      "count": 2,
+      "levels": {
+        "ERROR": 2
+      },
+      "examples": [
+        "2026-09-25T10:00:00 ERROR Connection failed for client 102 from 10.0.0.3",
+        "2026-09-25T10:00:02 ERROR Connection failed for client 103 from 10.0.0.8"
+      ]
+    },
+    {
+      "template": "<TIMESTAMP> INFO Request <N> completed",
+      "count": 1,
+      "levels": {
+        "INFO": 1
+      },
+      "examples": [
+        "2026-09-25T10:01:00 INFO Request 500 completed"
+      ]
+    },
+    {
+      "template": "<TIMESTAMP> ERROR Database timeout after <N> seconds",
+      "count": 1,
+      "levels": {
+        "ERROR": 1
+      },
+      "examples": [
+        "2026-09-25T10:02:00 ERROR Database timeout after 30 seconds"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "id": "011",
+  "status": "executed",
+  "commands": [
+    "python src/analyze_logs.py sample/app.log --top 20"
+  ],
+  "elapsed_seconds": 1.76,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample/app.log",
+      "sha256": "f8a508b57cd0c0f113a58c1d72689c65297603b6da0cbf779b4354b4424cf5ec"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "e40d75a5b3640026d61c30cb9b1676eda02f430b24f881db4ed3da705097f5e7",
+      "bytes": 954
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}

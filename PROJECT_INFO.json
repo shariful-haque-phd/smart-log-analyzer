@@ -1,0 +1,31 @@
+{
+  "project_id": 11,
+  "repo_name": "011-smart-log-analyzer",
+  "title": "Smart Log Analyzer",
+  "theme": "Data Foundations & Engineering",
+  "theme_id": "T01",
+  "level": 1,
+  "level_label": "Foundations",
+  "prototype_status": "research prototype",
+  "primary_description": "Log template grouping",
+  "research_question_proposed": "How effectively can event templates summarize noisy application logs for human investigation?",
+  "sample_files": [
+    "sample/app.log"
+  ],
+  "source_modules": [
+    "src/analyze_logs.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/analyze_logs.py sample/app.log --top 20"
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level1-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}
